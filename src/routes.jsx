@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import RoomDetailPage from './pages/RoomDetailPage'
 import BookingPage from './pages/BookingPage'
 import ConfirmationPage from './pages/ConfirmationPage'
+import AvailabilityPage from './pages/AvailabilityPage'
 
 function RootLayout() {
   return (
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
       { path: 'rooms/:id', Component: RoomDetailPage },
       { path: 'booking/:roomId', Component: BookingPage },
       { path: 'confirmation', Component: ConfirmationPage },
+      { path: 'availability', Component: AvailabilityPage },
     ],
   },
 ])

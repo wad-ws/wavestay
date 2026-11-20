@@ -18,6 +18,15 @@ export default function Header() {
           >
             Nos chambres
           </NavLink>
+          <NavLink
+            to="/availability"
+            end
+            className={({ isActive }) =>
+              isActive ? 'text-ink' : 'transition-colors hover:text-ink'
+            }
+          >
+            Disponibilités
+          </NavLink>
           <a href="#contact" className="transition-colors hover:text-ink">
             Contact
           </a>

@@ -35,9 +35,26 @@ src/
 ├── routes.jsx            # createBrowserRouter + RootLayout
 ├── index.css             # @import "tailwindcss" + tokens @theme
 ├── data/rooms.js         # 3 chambres (données en dur)
+├── data/availability.js  # périodes d'occupation mock (déc. 2026 – fév. 2027)
 ├── components/           # Header, Footer, RoomCard, RoomGallery, BookingWidget
-└── pages/                # HomePage, RoomDetailPage, BookingPage, ConfirmationPage
+└── pages/                # HomePage, RoomDetailPage, BookingPage, ConfirmationPage,
+                          # AvailabilityPage
 ```
+
+## Page Disponibilités
+
+Accessible via le lien **"Disponibilités"** dans le Header ou directement sur
+`http://localhost:5173/availability`.
+
+Tableau interactif permettant de :
+- Choisir une plage d'arrivée / départ (deux `<input type="date">`) ;
+- Visualiser en temps réel la disponibilité de chaque chambre (badge vert / rouge) ;
+- Trier par Chambre, Surface ou Prix/nuit (clic sur l'en-tête de colonne) ;
+- Filtrer pour n'afficher que les chambres disponibles ;
+- Réserver directement depuis le tableau — les dates sont pré-remplies dans la page de réservation.
+
+Les disponibilités sont calculées à partir de données mock fixes dans `src/data/availability.js`
+(périodes d'occupation de décembre 2026 à février 2027).
 
 ## Hors-scope (à ajouter via waveagentdev pendant la démo)
 
