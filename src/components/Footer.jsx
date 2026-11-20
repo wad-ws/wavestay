@@ -17,6 +17,7 @@ export default function Footer() {
             <li>12 rue de la Paix, 75002 Paris</li>
             <li>+33 1 23 45 67 89</li>
             <li>contact@wavestay.fr</li>
+            <li>Ouvert 7j/7, de 8h à 20h</li>
           </ul>
         </div>
         <div>
